@@ -2,7 +2,7 @@ import React from "react";
 import './Carousel.css';
 import { Carousel } from "react-responsive-carousel";
 
-
+const conflicto ='es un conflicto'
 export default () => (
     <Carousel autoPlay>
     <div >
