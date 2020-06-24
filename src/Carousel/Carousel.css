@@ -1,0 +1,7 @@
+.redondeado {
+    border-radius: 10px;
+}
+
+.carousel li.slide img{
+    height: 350px;
+}
