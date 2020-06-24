@@ -4,6 +4,8 @@ import { Carousel } from "react-responsive-carousel";
 
 
 const conflitco='esto es un confilcto'
+
+const noconflict='extraño'
 export default () => (
     <Carousel autoPlay>
     <div >
