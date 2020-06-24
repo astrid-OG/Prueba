@@ -2,6 +2,7 @@ import React from "react";
 import './Carousel.css';
 import { Carousel } from "react-responsive-carousel";
 
+const intentoConflict='intento-Conflicto'
 
 const conflitco='esto es un confilcto'
 export default () => (
