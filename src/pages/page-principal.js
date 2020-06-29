@@ -3,8 +3,10 @@ import { Grid, Cell } from "styled-css-grid";
 import Carousel from './../components/Carousel/Carousel'
 import Card from './../components/card/card'
 import Barra from './../components/Barra/Barra'
+import Welcome from './../components/welcome/welcome';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Route, Switch, Link } from 'react-router-dom';
+import './page-principal.css';
 
 
 
@@ -111,11 +113,14 @@ class PagePrincipal extends Component {
                 <Cell area="header"> <Barra />
                 </Cell>
                 <Cell area="content">
-                    <Switch>
-                        <Route path="/principal" exact  render={() => <Carousel listImagen={this.state.listImagen} />} />
-                        <Route path="/principal/tarjetas" exact render={()=><Card listCards={this.state.listCard} />} />
+                    <div className="medida-content">
+                        <Switch>
+                            <Route path="/principal" exact component={Welcome} />
+                            <Route path="/principal/carousel" exact render={() => <Carousel listImagen={this.state.listImagen} />} />
+                            <Route path="/principal/tarjetas" exact render={() => <Card listCards={this.state.listCard} />} />
 
-                    </Switch>
+                        </Switch>
+                    </div>
 
 
                 </Cell>

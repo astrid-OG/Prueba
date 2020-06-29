@@ -16,7 +16,6 @@ function App() {
       <div className='App-header'>
         <Route exact path="/" render={() => <Redirect to="/principal" />} />
         <Route path="/principal" component={PagePrincipal} />
-        <Route path="/barra" component={Barra} />
       </div>
     </BrowserRouter>
 
