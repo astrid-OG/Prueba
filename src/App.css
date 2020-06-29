@@ -1,16 +1,17 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f0ecef;
+  background-image: url("https://i.pinimg.com/originals/a2/7b/c0/a27bc00b22f5bfbf9ca47fbda19406f1.jpg");
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(20, 190, 202);
+  color: rgb(14, 13, 13);
 }
 
 .App-link {
