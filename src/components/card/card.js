@@ -22,6 +22,7 @@ export default function MediaCard(props) {
 
     return (
         <div style={{display:"flex"}}>
+            <h1>{props.name}</h1>
             {props.listCards.map(item => {
                 return <Card className={classes.root} style={{marginRight:"20px"}}>
 

@@ -56,7 +56,8 @@ class PagePrincipal extends Component {
                 imagen: 'https://www.expreso.info/files/2020-04/Felices_Vacaciones.jpg'
 
             },
-        ]
+        ],
+        name:'Astrid Carolina'
         }
     }
 
@@ -75,7 +76,7 @@ class PagePrincipal extends Component {
 
                 <Cell>
                     <Carousel />
-                    <Card listCards={this.state.listCard}/>
+                    <Card listCards={this.state.listCard} name={this.state.name}/>
                 </Cell>
                 <Cell>Ads</Cell>
 
