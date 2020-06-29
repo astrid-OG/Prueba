@@ -58,9 +58,6 @@ export default () => (
       <img alt="" className="redondeado" src="13.jpg" />
       <p className="legend">EL PEÑOL</p>
     </div>
-    <div>
-      <img alt="" className="redondeado" src="14.jpg" />
-      <p className="legend">CARTAGENA</p>
-    </div> 
+
     </Carousel>
   );
