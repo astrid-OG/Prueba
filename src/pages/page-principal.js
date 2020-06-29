@@ -4,7 +4,7 @@ import Carousel from './../components/Carousel/Carousel'
 import Card from './../components/card/card'
 import Barra from './../components/Barra/Barra'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Route, Switch, Link } from 'react-router-dom';
 
 
 
@@ -35,87 +35,93 @@ class PagePrincipal extends Component {
                 imagen: 'https://www.expreso.info/files/2020-04/Felices_Vacaciones.jpg'
 
             },
-            
-        ],
-        listImagen:[{
-            imagen:'3.jpg',
-            titulo:'CARTAGENA'
-        },
-        {
-        
-            imagen:'1.jpg',
-            titulo:'PLAYA BLANCA'
-        },
-        {
-            imagen:'2.jpg',
-            titulo:'CARTAGENA'
-        },
-        {
-            imagen:'4.jpg',
-            titulo:'SAN FELIPE DE BARAJAS'
-        },
-        {
-            imagen:'5.jpg',
-            titulo:'TERMALES MANIZALES'
-        },
-        {
-            imagen:'6.jpg',
-            titulo:'FAMILIA'
-        },
-        {
-            imagen:'7.jpg',
-            titulo:'EL BOSQUE PALMIRA'
-        },
-        {
-            imagen:'8.jpg',
-            titulo:'PARQUE DEL CAFE'
-        },
-        {
-            imagen:'9.jpg',
-            titulo:'KRATER PARQUE DEL CAFE'
-        },
-        {
-            imagen:'10.jpg',
-            titulo:'PARQUE DEL CAFE'
-        },
-        {
-            imagen:'11.jpg',
-            titulo:'SAN FELIPE DE BARAJAS'
-        },
-        {
-            imagen:'12.jpg',
-            titulo:'EL PEÑOL'
-        },
-        {
-            imagen:'13.jpg',
-            titulo:'EL PEÑOL'
-        },
-        {
-            imagen:'14.jpg',
-            titulo:'CARTAGENA'
-        },
-        ]
+
+            ],
+            listImagen: [{
+                imagen: '3.jpg',
+                titulo: 'CARTAGENA'
+            },
+            {
+
+                imagen: '1.jpg',
+                titulo: 'PLAYA BLANCA'
+            },
+            {
+                imagen: '2.jpg',
+                titulo: 'CARTAGENA'
+            },
+            {
+                imagen: '4.jpg',
+                titulo: 'SAN FELIPE DE BARAJAS'
+            },
+            {
+                imagen: '5.jpg',
+                titulo: 'TERMALES MANIZALES'
+            },
+            {
+                imagen: '6.jpg',
+                titulo: 'FAMILIA'
+            },
+            {
+                imagen: '7.jpg',
+                titulo: 'EL BOSQUE PALMIRA'
+            },
+            {
+                imagen: '8.jpg',
+                titulo: 'PARQUE DEL CAFE'
+            },
+            {
+                imagen: '9.jpg',
+                titulo: 'KRATER PARQUE DEL CAFE'
+            },
+            {
+                imagen: '10.jpg',
+                titulo: 'PARQUE DEL CAFE'
+            },
+            {
+                imagen: '11.jpg',
+                titulo: 'SAN FELIPE DE BARAJAS'
+            },
+            {
+                imagen: '12.jpg',
+                titulo: 'EL PEÑOL'
+            },
+            {
+                imagen: '13.jpg',
+                titulo: 'EL PEÑOL'
+            },
+            {
+                imagen: '14.jpg',
+                titulo: 'CARTAGENA'
+            },
+            ]
         }
     }
 
     render() {
         return (
             <Grid
-            columns={"310px 1fr 200px"}
-            rows={"63px 1fr 45px"}
-            areas={[
-                "header header  header",
-                "menu   content ads   ",
-                "footer footer  footer"
-            ]}>
-            <Cell area="header"> <Barra/>
-            </Cell>
-            <Cell area="content"> <Carousel listImagen={this.state.listImagen}/> <br></br>
-                <Card listCards={this.state.listCard}/>
-            </Cell>
-            <Cell area="menu">Menu</Cell>
-            <Cell area="ads">Ads</Cell>
-            <Cell area="footer">footer</Cell>
+                columns={"310px 1fr 200px"}
+                rows={"63px 1fr 45px"}
+                areas={[
+                    "header header  header",
+                    "menu   content ads   ",
+                    "footer footer  footer"
+                ]}>
+                <Cell area="header"> <Barra />
+                </Cell>
+                <Cell area="content">
+                    <Switch>
+                        <Route path="/principal" exact  render={() => <Carousel listImagen={this.state.listImagen} />} />
+                        <Route path="/principal/tarjetas" exact render={()=><Card listCards={this.state.listCard} />} />
+
+                    </Switch>
+
+
+                </Cell>
+                <Cell area="menu">Menu</Cell>
+                <Cell area="ads">Ads</Cell>
+                <Cell area="footer">footer</Cell>
             </Grid>
 
         );
