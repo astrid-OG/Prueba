@@ -36,6 +36,64 @@ class PagePrincipal extends Component {
 
             },
             
+        ],
+        listImagen:[{
+            imagen:'3.jpg',
+            titulo:'CARTAGENA'
+        },
+        {
+        
+            imagen:'1.jpg',
+            titulo:'PLAYA BLANCA'
+        },
+        {
+            imagen:'2.jpg',
+            titulo:'CARTAGENA'
+        },
+        {
+            imagen:'4.jpg',
+            titulo:'SAN FELIPE DE BARAJAS'
+        },
+        {
+            imagen:'5.jpg',
+            titulo:'TERMALES MANIZALES'
+        },
+        {
+            imagen:'6.jpg',
+            titulo:'FAMILIA'
+        },
+        {
+            imagen:'7.jpg',
+            titulo:'EL BOSQUE PALMIRA'
+        },
+        {
+            imagen:'8.jpg',
+            titulo:'PARQUE DEL CAFE'
+        },
+        {
+            imagen:'9.jpg',
+            titulo:'KRATER PARQUE DEL CAFE'
+        },
+        {
+            imagen:'10.jpg',
+            titulo:'PARQUE DEL CAFE'
+        },
+        {
+            imagen:'11.jpg',
+            titulo:'SAN FELIPE DE BARAJAS'
+        },
+        {
+            imagen:'12.jpg',
+            titulo:'EL PEÑOL'
+        },
+        {
+            imagen:'13.jpg',
+            titulo:'EL PEÑOL'
+        },
+        {
+            imagen:'14.jpg',
+            titulo:'CARTAGENA'
+        },
         ]
         }
     }
@@ -52,7 +110,7 @@ class PagePrincipal extends Component {
             ]}>
             <Cell area="header"> <Barra/>
             </Cell>
-            <Cell area="content"> <Carousel/> <br></br>
+            <Cell area="content"> <Carousel listImagen={this.state.listImagen}/> <br></br>
                 <Card listCards={this.state.listCard}/>
             </Cell>
             <Cell area="menu">Menu</Cell>
