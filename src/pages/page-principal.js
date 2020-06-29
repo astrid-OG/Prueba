@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 
+
 class PagePrincipal extends Component {
     constructor(props) {
         super(props);
@@ -35,29 +36,31 @@ class PagePrincipal extends Component {
                 imagen: 'https://www.expreso.info/files/2020-04/Felices_Vacaciones.jpg'
 
             },
-            
-        ]
+
+            ]
         }
     }
 
     render() {
         return (
             <Grid
-            columns={"310px 1fr 200px"}
-            rows={"63px 1fr 45px"}
-            areas={[
-                "header header  header",
-                "menu   content ads   ",
-                "footer footer  footer"
-            ]}>
-            <Cell area="header"> <Barra/>
-            </Cell>
-            <Cell area="content"> <Carousel/> <br></br>
-                <Card listCards={this.state.listCard}/>
-            </Cell>
-            <Cell area="menu">Menu</Cell>
-            <Cell area="ads">Ads</Cell>
-            <Cell area="footer">footer</Cell>
+                columns={"310px 1fr 200px"}
+                rows={"63px 1fr 45px"}
+                areas={[
+                    "header header  header",
+                    "menu   content ads   ",
+                    "footer footer  footer"
+                ]}>
+                <Cell area="header"> <Barra />
+                </Cell>
+                <Cell area="content">
+                    <Carousel />
+                    <br></br>
+                <Card listCards={this.state.listCard} />
+                </Cell>
+                <Cell area="menu">Menu</Cell>
+                <Cell area="ads">Ads</Cell>
+                <Cell area="footer">footer</Cell>
             </Grid>
 
         );
