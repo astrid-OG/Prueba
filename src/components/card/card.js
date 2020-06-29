@@ -7,13 +7,14 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import './card.css';
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 345,
+        maxWidth: 300,
     },
     media: {
-        height: 140,
+        height: 120,
     },
 });
 
@@ -21,9 +22,9 @@ export default function MediaCard(props) {
     const classes = useStyles();
 
     return (
-        <div style={{display:"flex"}}>
+        <div style={{display:"flex"}} >
             {props.listCards.map(item => {
-                return <Card className={classes.root} style={{marginRight:"20px"}}>
+                return <Card className={classes.root} style={{marginRight:"10px"}} className="color-card">
 
                     <CardActionArea>
                         <CardMedia
@@ -32,7 +33,7 @@ export default function MediaCard(props) {
                             title="Contemplative Reptile"
                         />
                         <CardContent>
-                            <Typography gutterBottom variant="h5" component="h2">
+                            <Typography gutterBottom variant="h5" component="h4">
                                 {item.title}
           </Typography>
                             <Typography variant="body2" color="textSecondary" component="p">

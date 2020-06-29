@@ -3,36 +3,64 @@ import './Carousel.css';
 import { Carousel } from "react-responsive-carousel";
 
 
-const conflicto ='es un conflicto'
-
-const hola='hola'
-
 export default () => (
-    <Carousel autoPlay>
+  
+    <Carousel autoPlay showThumbs={false}>
     <div >
-      <img alt="" className="redondeado" src="https://img.freepik.com/foto-gratis/avion-juguete-cerca-suministros-viaje_23-2147746341.jpg?size=626&ext=jpg" />
-      <p className="legend">VIAJES</p>
+      <img alt="" className="redondeado"  src="3.jpg" />
+      <p className="legend">CARTAGENA</p>
     </div>
     <div>
-      <img alt="" className="redondeado" src="https://img.freepik.com/foto-gratis/silla-mesa-comedor-playa-mar-cielo-azul_74190-6094.jpg?size=626&ext=jpg" />
-      <p className="legend">PLAYA</p>
+      <img alt="" className="redondeado" src="1.jpg" />
+      <p className="legend">PLAYA BLANCA</p>
     </div>
     <div>
-      <img alt="" className="redondeado" src="https://img.freepik.com/foto-gratis/palma-recorrido-lujo-bora-caribe_1203-5350.jpg?size=626&ext=jpg" />
-      <p className="legend">MALDIVAS</p>
+      <img alt="" className="redondeado" src="2.jpg" />
+      <p className="legend">CARTAGENA</p>
     </div>
     <div>
-      <img alt="" className="redondeado" src="https://image.freepik.com/foto-gratis/panorama-piramides-teotihuacan_163782-417.jpg" />
-      <p className="legend">MEXICO</p>
+      <img alt="" className="redondeado" src="4.jpg" />
+      <p className="legend">SAN FELIPE DE BARAJAS</p>
     </div>
     <div>
-      <img alt="" className="redondeado" src="https://img.freepik.com/foto-gratis/bayside-marketplace-al-atardecer-miami-florida_29285-1088.jpg?size=626&ext=jpg" />
-      <p className="legend">MIAMI</p>
+      <img alt="" className="redondeado" src="5.jpg" />
+      <p className="legend">TERMALES MANIZALES</p>
     </div>
     <div>
-      <img alt="" className="redondeado" src="https://img.freepik.com/foto-gratis/hermosa-panoramica-torre-eiffel-paris-rodeada-agua-barcos-cielo-colorido_181624-5118.jpg?size=626&ext=jpg" />
-      <p className="legend">PARIS</p>
+      <img alt="" className="redondeado" src="6.jpg" />
+      <p className="legend">FAMILIA</p>
     </div>
-      
+    <div>
+      <img alt="" className="redondeado" src="7.jpg" />
+      <p className="legend">EL BOSQUE PALMIRA</p>
+    </div>
+    <div>
+      <img alt="" className="redondeado" src="8.jpg" />
+      <p className="legend">PARQUE DEL CAFE</p>
+    </div>
+    <div>
+      <img alt="" className="redondeado" src="9.jpg" />
+      <p className="legend">KRATER PARQUE DEL CAFE</p>
+    </div>
+    <div>
+      <img alt="" className="redondeado" src="10.jpg" />
+      <p className="legend">PARQUE DEL CAFE</p>
+    </div>
+    <div>
+      <img alt="" className="redondeado" src="11.jpg" />
+      <p className="legend">SAN FELIPE DE BARAJAS</p>
+    </div>
+    <div>
+      <img alt="" className="redondeado" src="12.jpg" />
+      <p className="legend">EL PEÑOL</p>
+    </div>
+    <div>
+      <img alt="" className="redondeado" src="13.jpg" />
+      <p className="legend">EL PEÑOL</p>
+    </div>
+    <div>
+      <img alt="" className="redondeado" src="14.jpg" />
+      <p className="legend">CARTAGENA</p>
+    </div> 
     </Carousel>
   );
