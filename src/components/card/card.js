@@ -11,10 +11,11 @@ import './card.css';
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 300,
+        maxWidth: 345,
+        
     },
     media: {
-        height: 120,
+        height: 150,
     },
 });
 
@@ -24,13 +25,13 @@ export default function MediaCard(props) {
     return (
         <div style={{display:"flex"}} >
             {props.listCards.map(item => {
-                return <Card className={classes.root} style={{marginRight:"10px"}} className="color-card">
+                return <Card className={classes.root} style={{marginRight:"10px"}} className="color-card" >
 
                     <CardActionArea>
                         <CardMedia
                             className={classes.media}
                             image={item.imagen}
-                            title="Contemplative Reptile"
+                           
                         />
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="h4">

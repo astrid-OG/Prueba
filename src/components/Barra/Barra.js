@@ -14,16 +14,16 @@ export default class Barra extends Component{
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" href="#">Segundo <span className="sr-only">(current)</span></a>
+                  <Link className="nav-link" to={{pathname:`/principal/perfil`}}>Perfil <span className="sr-only">(current)</span></Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to={{pathname:`/principal/carousel`}}>Tercero</Link>
+                  <Link className="nav-link" to={{pathname:`/principal/github`}}>GitHub</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to={{ pathname:`/principal/tarjetas`}}>Cuarto</Link>
+                  <Link className="nav-link" to={{ pathname:`/principal/intereses`}}>Intereses</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Quinto</a>
+                  <Link className="nav-link" to={{pathname:`/principal/otros`}} tabindex="-1" aria-disabled="true">Otros</Link>
                 </li>
               </ul>
             </div>

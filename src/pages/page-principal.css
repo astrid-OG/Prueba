@@ -1,3 +1,10 @@
 .medida-content{
     min-height: 70vh;
  }
+
+ .fondo {
+ 
+    background-image: url("https://i.pinimg.com/originals/a2/7b/c0/a27bc00b22f5bfbf9ca47fbda19406f1.jpg");
+    min-height: 100vh;
+  
+  }
