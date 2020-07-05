@@ -1,14 +1,14 @@
 .gatsby-highlight {
     color: rgb(255, 255, 255);
     tab-size: 1.5em;
-    background: rgb(218, 145, 202);
+    background: rgb(157, 193, 247);
     border-radius: 10px;
     overflow: auto;
     text-align: center;
 }
 
 .letra{
-    color: rgb(218, 145, 202); 
+    color: rgb(16, 17, 17); 
 }
 
 .Git-color {
