@@ -8,30 +8,30 @@ class page1 extends Component{
         this.state = {
             listCard: [{
                 title: 'Peliculas Favoritas',
-                description: 'El deporte es una actividad reglamentada, normalmente de carácter competitivo',
+                description: 'Me gusta ver muchas peliculas, generalmente del genero de terror...',
                 imagen: 'https://previews.123rf.com/images/9dreamstudio/9dreamstudio1901/9dreamstudio190101658/115850127-movie-premiere-concept-clapperboard-film-stock-popcorn-on-pink-background-top-view.jpg'
             },
             {
                 title: 'Musica Favorita',
-                description: 'El deporte es una actividad reglamentada, normalmente de carácter competitivo',
+                description: 'Escucho todo el tiempo musica para realizar mis actividades diarias, desafortunadamente no recuerdo los nombres de ellas',
                 imagen: 'https://image.freepik.com/foto-gratis/cassette-auriculares-sobre-fondo-blanco-rosa_23-2148282094.jpg'
 
             },
             {
                 title: 'Pasatiempos',
-                description: 'El deporte es una actividad reglamentada, normalmente de carácter competitivo',
+                description: 'Tengo dos pasatiempos favoritos que son comer y dormir en especial dormir :p',
                 imagen: 'https://image.freepik.com/vector-gratis/ilustracion-vectorial-actividades-diarias-rutina-ninos_29937-2538.jpg'
 
             },
             {
                 title: 'Estudios',
-                description: 'El deporte es una actividad reglamentada, normalmente de carácter competitivo',
+                description: 'Soy algo perezosa para el estudio pero me gusta aprender nuevas cosas, creo que el tener nuevos conocimientos me haces muy feliz',
                 imagen: 'https://previews.123rf.com/images/phasuthorn/phasuthorn1601/phasuthorn160100113/51089219-las-preciosas-malvaviscos-coraz%C3%B3n-rosado-y-peque%C3%B1o-cuaderno-blanco-sobre-tela-de-algod%C3%B3n-de-color-rosa-para-e.jpg'
 
             },
             {
                 title: 'Comida Favorita',
-                description: 'El deporte es una actividad reglamentada, normalmente de carácter competitivo',
+                description: 'Soy amante a la comida, en especial arroz chino pero en general me gusta probar nuevas comidas y experimentar recetas',
                 imagen: 'https://www.dhresource.com/0x0/f2/albu/g8/M01/95/CF/rBVaVF0nMpyAbB42AAZ0gaIWb58282.jpg'
 
             },

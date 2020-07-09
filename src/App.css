@@ -3,8 +3,8 @@
 }
 
 .App-header {
- 
-  background-image: url("https://i.pinimg.com/originals/a2/7b/c0/a27bc00b22f5bfbf9ca47fbda19406f1.jpg");
+  background-color: rgb(247, 244, 240);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQizFLS5cchZS3-9Kqwj1cSok9OiHMyWx32ig&usqp=CAU");
   min-height: 100vh;
 
 }

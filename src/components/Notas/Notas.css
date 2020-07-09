@@ -1,0 +1,8 @@
+.stylenotas {
+    color: rgb(255, 255, 255);
+    tab-size: 1.5em;
+    background-image: linear-gradient(87deg, #f18fac, #f7b7c3);
+    border-radius: 10px;
+    overflow: auto;
+    text-align: center;
+}

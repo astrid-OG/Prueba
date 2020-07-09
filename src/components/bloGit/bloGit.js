@@ -39,6 +39,14 @@ render() {
             <h2 className='letra'>Git fetch</h2>
             <p>Busca todos los recursos de un repositorio remoto que actualmente no están en el directorio local.</p>
             <pre className='gatsby-highlight'><br/> git fetch origin <br/> </pre>
+
+            <h2 className='letra'>Git checkout</h2>
+            <p>Con este comando cambiamos de una rama a otra.</p>
+            <pre className='gatsby-highlight'><br/> git checkout nombredelarama <br/> </pre>
+
+            <h2 className='letra'>Git status</h2>
+            <p>Nos dice en que rama nos encontramos.</p>
+            <pre className='gatsby-highlight'><br/> git status <br/> </pre>
             <p>.</p>
         </div>
     )
