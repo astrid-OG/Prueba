@@ -7,6 +7,7 @@ import Notas from '../components/Notas/Notas'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Route, Switch, Link } from 'react-router-dom';
 import './page-principal.css';
+import Button from 'react-bootstrap/Button';
 
 
 
@@ -87,7 +88,13 @@ class PagePrincipal extends Component {
                         </Switch>
                     </div>
                 </Cell>
-                <Cell area="footer">footer</Cell>
+                <Cell area="footer"> 
+                <div className="boton">
+                    <Button variant="primary" size="lg" disabled>
+                    Cambiar Fondo
+                    </Button>
+                </div>
+                </Cell>
             </Grid>
 
         );
