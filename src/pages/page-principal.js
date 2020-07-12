@@ -8,7 +8,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Route, Switch, Link } from 'react-router-dom';
 import './page-principal.css';
 import Button from 'react-bootstrap/Button';
-
+import Itinerario from '../components/itinerario/itinerario';
+import FormItinerario from '../components/formItinerario/formItinerario';
 
 
 class PagePrincipal extends Component {
@@ -51,7 +52,7 @@ class PagePrincipal extends Component {
 
         }
     }
-
+    
     render() {
         return (
             <Grid 
@@ -68,7 +69,8 @@ class PagePrincipal extends Component {
                     <div className="medida-content">
                         <Switch>
                             <Route exact path="/principal" component={page1}/>
-                            <Route exact path="/principal/github" component={bloGit}/>              
+                            <Route exact path="/principal/github" component={bloGit}/>
+                            <Route exact path="/principal/itinerario" component={Itinerario}/>              
                         </Switch>
                     </div>
 
@@ -85,6 +87,7 @@ class PagePrincipal extends Component {
                 <div>
                         <Switch>
                         <Route exact path="/principal/github" render={()=><Notas lista={this.state.listItem2}/>}/>
+                         
                         </Switch>
                     </div>
                 </Cell>

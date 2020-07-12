@@ -20,7 +20,7 @@ export default class Barra extends Component{
                   <Link className="nav-link" to={{pathname:`/principal/github`}}>GitHub</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to={{ pathname:`/principal/intereses`}}>Intereses</Link>
+                  <Link className="nav-link" to={{ pathname:`/principal/itinerario`}}>Itinerario</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to={{pathname:`/principal/otros`}} tabindex="-1" aria-disabled="true">Otros</Link>

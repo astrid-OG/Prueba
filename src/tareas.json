@@ -1,0 +1,41 @@
+{
+    "tareas": [
+        {
+            "title": "Clases React",
+            "description": "CLases de React impartidas por el señor Juan David Muñoz Garzo :p",
+            "time": "por definir",
+            "priority": "high"
+        },
+        {
+            "title": "React",
+            "description": "Practicar lo enseñado por el profesor ",
+            "time": "20:30 - 24:00",
+            "priority": "high"
+        },
+        {
+            "title": "Tesis",
+            "description": "Trabajar en la tesis, YA TENGO QUE ACABAR EL MAPEO SISTEMATICO",
+            "time": "10:00 - 1:00 & 16:30 - 18:30",
+            "priority": "high"
+        },
+        {
+            "title": "Clases Ingles",
+            "description": "Clases de ingles",
+            "time": "19:00 - 20:00",
+            "priority": "medium"
+        },
+        {
+            "title": "Ingles",
+            "description": "Estudiar ingles",
+            "time": "19:00 - 20:00",
+            "priority": "medium"
+        },
+        {
+            "title": "Ejercicio",
+            "description": "Hacer ejercicio con Diany Mosquera Ordoñez. Bañarme y arreglarme",
+            "time": "14:00 - 15:30",
+            "priority": "medium"
+        }
+      
+    ]
+  }
