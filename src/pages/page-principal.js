@@ -52,11 +52,7 @@ class PagePrincipal extends Component {
 
         }
     }
-    ChangeHandlerBackground = (event) =>{
-        this.setState({
-            estilo: event.target.value
-        })
-    }
+  
     render() {
         
         return (
@@ -98,7 +94,7 @@ class PagePrincipal extends Component {
                 </Cell>
                 <Cell area="footer"> 
                 <div className="boton">
-                    <Button variant="primary" size="lg" disabled onClick={this.handleChangeBackground}>
+                    <Button variant="primary" size="lg" onClick={this.props.background}>
                     Cambiar Fondo
                     </Button>
                 </div>

@@ -12,25 +12,43 @@ import Color from './components/color/color';
 
 
 
-function App() {
-  
-
-  const estilo =['App-header','App-header2','App-header3']
-  return (
-
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      estilo :['App-header','App-header2','App-header3','App-header4'],
+      cont:0
+    }
+  }
+      
+  handleChangeBackground =()=> {
+    var aux= this.state.cont
+    aux++
+    this.setState({
+      cont:aux
+    })
     
-    <BrowserRouter history={history}>
-      <div className={estilo[2]}>
+    if(this.state.cont==4){
+      this.setState({
+        cont:0
+      })
+    }  
+    console.log(this.state)
+  }
+    render(){
+      return(
+      <BrowserRouter history={history}>
+      <div className={this.state.estilo[this.state.cont]}>
         <Route exact path="/" render={() => <Redirect to="/principal" />} />
-        <Route path="/principal" component={PagePrincipal} />
+        <Route path="/principal" render={() => <PagePrincipal background={this.handleChangeBackground}/>} />
         <Route path="/responsive" component={Responsive} />
         <Route path="/input" component={Input} />
         <Route path="/color" component={Color} />
       </div>
     </BrowserRouter>
 
-
-  );
+      )
+    } 
 }
 
 export default App;

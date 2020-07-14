@@ -8,15 +8,20 @@ class Itinerario extends Component{
         this.state = {
           tareas
         }
-        this.handleAddTareas = this.handleAddTareas.bind(this);
+        // this.handleAddTareas = this.handleAddTareas.bind(this);
       }
 
       removeTareas(index) {
+        // this.setState({
+        //   tareas: this.state.tareas.filter((event, i) => {
+        //     return i !== index
+        //   })
+        // });
+        const aux = this.state.tareas;
+        aux.splice(index,1);
         this.setState({
-          tareas: this.state.tareas.filter((event, i) => {
-            return i !== index
-          })
-        });
+          tareas:aux
+        })
       }
     
       handleAddTareas(tareas) {
@@ -45,7 +50,7 @@ class Itinerario extends Component{
                 <div className="card-footer text-center">
                   <button
                     className="btn btn-info"
-                    onClick={this.removeTareas.bind(this, i)}>
+                    onClick={()=>this.removeTareas(i)}>
                     Eliminar
                   </button>
                 </div>
@@ -60,7 +65,7 @@ class Itinerario extends Component{
             <div className="container">
               <div className="row mt-4">
                 <div className="col-md-4 text-center">
-                  <FormItinerario onAddTareas={this.handleAddTareas}></FormItinerario>
+                  <FormItinerario onAddTareas={(tareas)=>this.handleAddTareas(tareas)}></FormItinerario>
                 </div>
                 <div className="col-md-8">
                   <div className="row">
