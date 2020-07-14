@@ -8,20 +8,24 @@ import Barra from './components/Barra/Barra';
 import Responsive from './components/responsive/responsive'
 import Input from './components/input/input'
 import "bootstrap/dist/css/bootstrap.min.css";
+import Color from './components/color/color';
 
 
 
 function App() {
+  
 
-  const estilo ='App-header2';
+  const estilo =['App-header','App-header2','App-header3']
   return (
 
+    
     <BrowserRouter history={history}>
-      <div className={estilo}>
+      <div className={estilo[2]}>
         <Route exact path="/" render={() => <Redirect to="/principal" />} />
         <Route path="/principal" component={PagePrincipal} />
         <Route path="/responsive" component={Responsive} />
         <Route path="/input" component={Input} />
+        <Route path="/color" component={Color} />
       </div>
     </BrowserRouter>
 

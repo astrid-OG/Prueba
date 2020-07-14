@@ -9,7 +9,7 @@ import { Route, Switch, Link } from 'react-router-dom';
 import './page-principal.css';
 import Button from 'react-bootstrap/Button';
 import Itinerario from '../components/itinerario/itinerario';
-import FormItinerario from '../components/formItinerario/formItinerario';
+
 
 
 class PagePrincipal extends Component {
@@ -52,8 +52,13 @@ class PagePrincipal extends Component {
 
         }
     }
-    
+    ChangeHandlerBackground = (event) =>{
+        this.setState({
+            estilo: event.target.value
+        })
+    }
     render() {
+        
         return (
             <Grid 
                 columns={"200px 1fr 200px"}
@@ -93,7 +98,7 @@ class PagePrincipal extends Component {
                 </Cell>
                 <Cell area="footer"> 
                 <div className="boton">
-                    <Button variant="primary" size="lg" disabled>
+                    <Button variant="primary" size="lg" disabled onClick={this.handleChangeBackground}>
                     Cambiar Fondo
                     </Button>
                 </div>
